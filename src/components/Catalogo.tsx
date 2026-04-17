@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { products } from '../data/mockData';
+import { products, suppliers } from '../data/mockData';
 
 const Catalogo = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -25,6 +25,12 @@ const Catalogo = () => {
 
   const saveProduct = () => {
     if (editingProduct) {
+      // Atualizar o nome do fornecedor baseado no ID
+      const supplier = suppliers.find(s => s.id === editingProduct.supplierId);
+      if (supplier) {
+        setEditingProduct({ ...editingProduct, supplier: supplier.name });
+      }
+
       setProductList(productList.map(p =>
         p.id === editingProduct.id ? editingProduct : p
       ));
@@ -206,12 +212,17 @@ const Catalogo = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Fornecedor
                 </label>
-                <input
-                  type="text"
+                <select
                   className="input-field"
-                  value={editingProduct.supplier}
-                  onChange={(e) => setEditingProduct({ ...editingProduct, supplier: e.target.value })}
-                />
+                  value={editingProduct.supplierId}
+                  onChange={(e) => setEditingProduct({ ...editingProduct, supplierId: parseInt(e.target.value) })}
+                >
+                  {suppliers.map(supplier => (
+                    <option key={supplier.id} value={supplier.id}>
+                      {supplier.name}
+                    </option>
+                  ))}
+                </select>
               </div>
 
               <div className="grid grid-cols-2 gap-4">

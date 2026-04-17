@@ -18,7 +18,7 @@ export const products = [
     supplier: "TRW",
     supplierId: 2,
     price: 289.90,
-    stock: 75,
+    stock: 15,
     minStock: 15,
     image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=200&h=200&fit=crop"
   },
@@ -29,7 +29,7 @@ export const products = [
     supplier: "Moura",
     supplierId: 3,
     price: 650.00,
-    stock: 25,
+    stock: 5,
     minStock: 5,
     image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
   },
@@ -40,7 +40,7 @@ export const products = [
     supplier: "Monroe",
     supplierId: 4,
     price: 420.00,
-    stock: 40,
+    stock: 8,
     minStock: 8,
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
   },
@@ -73,7 +73,7 @@ export const products = [
     supplier: "Sachs",
     supplierId: 7,
     price: 1250.00,
-    stock: 12,
+    stock: 3,
     minStock: 3,
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
   },
@@ -84,7 +84,7 @@ export const products = [
     supplier: "Valeo",
     supplierId: 8,
     price: 880.00,
-    stock: 18,
+    stock: 4,
     minStock: 4,
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
   },
@@ -95,7 +95,7 @@ export const products = [
     supplier: "Würth",
     supplierId: 9,
     price: 8.50,
-    stock: 500,
+    stock: 200,
     minStock: 100,
     image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
   },
@@ -106,7 +106,7 @@ export const products = [
     supplier: "Würth",
     supplierId: 9,
     price: 12.90,
-    stock: 350,
+    stock: 80,
     minStock: 80,
     image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
   },
@@ -117,7 +117,7 @@ export const products = [
     supplier: "Federal Mogul",
     supplierId: 10,
     price: 450.00,
-    stock: 30,
+    stock: 6,
     minStock: 6,
     image: "https://images.unsplash.com/photo-1607799275518-d58665d096b1?w=200&h=200&fit=crop"
   },
@@ -128,7 +128,7 @@ export const products = [
     supplier: "Bosch",
     supplierId: 11,
     price: 680.00,
-    stock: 45,
+    stock: 10,
     minStock: 10,
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
   },
@@ -139,7 +139,7 @@ export const products = [
     supplier: "Garrett",
     supplierId: 12,
     price: 2800.00,
-    stock: 8,
+    stock: 2,
     minStock: 2,
     image: "https://images.unsplash.com/photo-1607799275518-d58665d096b1?w=200&h=200&fit=crop"
   },
@@ -150,7 +150,7 @@ export const products = [
     supplier: "Brembo",
     supplierId: 13,
     price: 320.00,
-    stock: 55,
+    stock: 12,
     minStock: 12,
     image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=200&h=200&fit=crop"
   },
@@ -161,7 +161,7 @@ export const products = [
     supplier: "Aisin",
     supplierId: 14,
     price: 285.00,
-    stock: 35,
+    stock: 8,
     minStock: 8,
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
   },
@@ -172,8 +172,327 @@ export const products = [
     supplier: "Bosch",
     supplierId: 11,
     price: 920.00,
-    stock: 22,
+    stock: 5,
     minStock: 5,
+    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
+  },
+  {
+    id: 17,
+    name: "Filtro de Ar Motor",
+    category: "Filtros",
+    supplier: "Mann Filter",
+    supplierId: 1,
+    price: 65.00,
+    stock: 200,
+    minStock: 25,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
+  },
+  {
+    id: 18,
+    name: "Filtro de Combustível",
+    category: "Filtros",
+    supplier: "Mann Filter",
+    supplierId: 1,
+    price: 45.00,
+    stock: 18,
+    minStock: 20,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
+  },
+  {
+    id: 19,
+    name: "Disco de Embreagem",
+    category: "Transmissão",
+    supplier: "Valeo",
+    supplierId: 8,
+    price: 380.00,
+    stock: 7,
+    minStock: 6,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
+  },
+  {
+    id: 20,
+    name: "Rolamento Roda Dianteira",
+    category: "Suspensão",
+    supplier: "SKF",
+    supplierId: 15,
+    price: 220.00,
+    stock: 25,
+    minStock: 8,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
+  },
+  {
+    id: 21,
+    name: "Rolamento Roda Traseira",
+    category: "Suspensão",
+    supplier: "SKF",
+    supplierId: 15,
+    price: 190.00,
+    stock: 22,
+    minStock: 8,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
+  },
+  {
+    id: 22,
+    name: "Bucha Suspensão Dianteira",
+    category: "Suspensão",
+    supplier: "Monroe",
+    supplierId: 4,
+    price: 85.00,
+    stock: 45,
+    minStock: 15,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
+  },
+  {
+    id: 23,
+    name: "Bucha Suspensão Traseira",
+    category: "Suspensão",
+    supplier: "Monroe",
+    supplierId: 4,
+    price: 75.00,
+    stock: 50,
+    minStock: 15,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
+  },
+  {
+    id: 24,
+    name: "Cilindro Mestre de Freio",
+    category: "Freios",
+    supplier: "TRW",
+    supplierId: 2,
+    price: 280.00,
+    stock: 3,
+    minStock: 5,
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=200&h=200&fit=crop"
+  },
+  {
+    id: 25,
+    name: "Servo Freio",
+    category: "Freios",
+    supplier: "Bosch",
+    supplierId: 11,
+    price: 450.00,
+    stock: 6,
+    minStock: 4,
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=200&h=200&fit=crop"
+  },
+  {
+    id: 26,
+    name: "Retentor Motor Dianteiro",
+    category: "Motor",
+    supplier: "Victor Reinz",
+    supplierId: 16,
+    price: 35.00,
+    stock: 0,
+    minStock: 10,
+    image: "https://images.unsplash.com/photo-1607799275518-d58665d096b1?w=200&h=200&fit=crop"
+  },
+  {
+    id: 27,
+    name: "Retentor Motor Traseiro",
+    category: "Motor",
+    supplier: "Victor Reinz",
+    supplierId: 16,
+    price: 28.00,
+    stock: 0,
+    minStock: 10,
+    image: "https://images.unsplash.com/photo-1607799275518-d58665d096b1?w=200&h=200&fit=crop"
+  },
+  {
+    id: 28,
+    name: "Junta Cabeçote Completa",
+    category: "Motor",
+    supplier: "Victor Reinz",
+    supplierId: 16,
+    price: 180.00,
+    stock: 4,
+    minStock: 5,
+    image: "https://images.unsplash.com/photo-1607799275518-d58665d096b1?w=200&h=200&fit=crop"
+  },
+  {
+    id: 29,
+    name: "Junta do Cárter",
+    category: "Motor",
+    supplier: "Elring",
+    supplierId: 17,
+    price: 95.00,
+    stock: 12,
+    minStock: 8,
+    image: "https://images.unsplash.com/photo-1607799275518-d58665d096b1?w=200&h=200&fit=crop"
+  },
+  {
+    id: 30,
+    name: "Bobina de Ignição",
+    category: "Elétrica",
+    supplier: "Delphi",
+    supplierId: 18,
+    price: 180.00,
+    stock: 8,
+    minStock: 6,
+    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
+  },
+  {
+    id: 31,
+    name: "Sensor de Rotação",
+    category: "Elétrica",
+    supplier: "Bosch",
+    supplierId: 11,
+    price: 125.00,
+    stock: 15,
+    minStock: 8,
+    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
+  },
+  {
+    id: 32,
+    name: "Sensor de Temperatura",
+    category: "Elétrica",
+    supplier: "VDO",
+    supplierId: 19,
+    price: 65.00,
+    stock: 20,
+    minStock: 10,
+    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
+  },
+  {
+    id: 33,
+    name: "Sensor de Pressão de Óleo",
+    category: "Elétrica",
+    supplier: "VDO",
+    supplierId: 19,
+    price: 78.00,
+    stock: 14,
+    minStock: 8,
+    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
+  },
+  {
+    id: 34,
+    name: "Motor de Partida",
+    category: "Elétrica",
+    supplier: "Bosch",
+    supplierId: 11,
+    price: 1200.00,
+    stock: 3,
+    minStock: 3,
+    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
+  },
+  {
+    id: 35,
+    name: "Compressor de Ar Condicionado",
+    category: "Elétrica",
+    supplier: "Denso",
+    supplierId: 20,
+    price: 850.00,
+    stock: 2,
+    minStock: 2,
+    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
+  },
+  {
+    id: 36,
+    name: "Bomba de Direção Hidráulica",
+    category: "Direção",
+    supplier: "ZF",
+    supplierId: 21,
+    price: 680.00,
+    stock: 5,
+    minStock: 4,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
+  },
+  {
+    id: 37,
+    name: "Caixa de Direção",
+    category: "Direção",
+    supplier: "ZF",
+    supplierId: 21,
+    price: 1450.00,
+    stock: 2,
+    minStock: 2,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
+  },
+  {
+    id: 38,
+    name: "Semieixo Dianteiro",
+    category: "Transmissão",
+    supplier: "GKN",
+    supplierId: 22,
+    price: 580.00,
+    stock: 6,
+    minStock: 4,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
+  },
+  {
+    id: 39,
+    name: "Semieixo Traseiro",
+    category: "Transmissão",
+    supplier: "GKN",
+    supplierId: 22,
+    price: 520.00,
+    stock: 6,
+    minStock: 4,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
+  },
+  {
+    id: 40,
+    name: "Diferencial Completo",
+    category: "Transmissão",
+    supplier: "Eaton",
+    supplierId: 23,
+    price: 2800.00,
+    stock: 1,
+    minStock: 1,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop"
+  },
+  {
+    id: 41,
+    name: "Porca de Roda M22x1.5",
+    category: "Fixação",
+    supplier: "Würth",
+    supplierId: 9,
+    price: 15.00,
+    stock: 150,
+    minStock: 50,
+    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
+  },
+  {
+    id: 42,
+    name: "Porca de Roda M24x2.0",
+    category: "Fixação",
+    supplier: "Würth",
+    supplierId: 9,
+    price: 18.00,
+    stock: 120,
+    minStock: 40,
+    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
+  },
+  {
+    id: 43,
+    name: "Arruela de Pressão",
+    category: "Fixação",
+    supplier: "Würth",
+    supplierId: 9,
+    price: 2.50,
+    stock: 500,
+    minStock: 200,
+    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
+  },
+  {
+    id: 44,
+    name: "Parafuso Sextavado M10x25",
+    category: "Fixação",
+    supplier: "Würth",
+    supplierId: 9,
+    price: 3.80,
+    stock: 400,
+    minStock: 150,
+    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
+  },
+  {
+    id: 45,
+    name: "Parafuso Sextavado M8x20",
+    category: "Fixação",
+    supplier: "Würth",
+    supplierId: 9,
+    price: 2.20,
+    stock: 600,
+    minStock: 200,
     image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=200&h=200&fit=crop"
   }
 ];
@@ -319,6 +638,96 @@ export const suppliers = [
     email: "contato@aisin.com.br",
     address: "Rua Água, 1400 - São Paulo/SP",
     products: products.filter(p => p.supplierId === 14).length
+  },
+  {
+    id: 15,
+    name: "SKF",
+    cnpj: "96.789.012/0001-34",
+    contact: "Gustavo Almeida",
+    phone: "(11) 3456-7804",
+    email: "vendas@skf.com.br",
+    address: "Av. Rolamentos, 1500 - São Paulo/SP",
+    products: products.filter(p => p.supplierId === 15).length
+  },
+  {
+    id: 16,
+    name: "Victor Reinz",
+    cnpj: "97.890.123/0001-45",
+    contact: "Helena Silva",
+    phone: "(11) 3456-7805",
+    email: "contato@victorreinz.com.br",
+    address: "Rua Juntas, 1600 - São Paulo/SP",
+    products: products.filter(p => p.supplierId === 16).length
+  },
+  {
+    id: 17,
+    name: "Elring",
+    cnpj: "98.901.234/0001-56",
+    contact: "Ricardo Junior",
+    phone: "(11) 3456-7806",
+    email: "compras@elring.com.br",
+    address: "Av. Vedação, 1700 - São Paulo/SP",
+    products: products.filter(p => p.supplierId === 17).length
+  },
+  {
+    id: 18,
+    name: "Delphi",
+    cnpj: "99.012.345/0001-67",
+    contact: "Mariana Costa",
+    phone: "(11) 3456-7807",
+    email: "vendas@delphi.com.br",
+    address: "Rua Ignição, 1800 - São Paulo/SP",
+    products: products.filter(p => p.supplierId === 18).length
+  },
+  {
+    id: 19,
+    name: "VDO",
+    cnpj: "11.234.567/0001-78",
+    contact: "Leonardo Santos",
+    phone: "(11) 3456-7808",
+    email: "contato@vdo.com.br",
+    address: "Av. Instrumentação, 1900 - São Paulo/SP",
+    products: products.filter(p => p.supplierId === 19).length
+  },
+  {
+    id: 20,
+    name: "Denso",
+    cnpj: "12.345.678/0001-89",
+    contact: "Juliana Oliveira",
+    phone: "(11) 3456-7809",
+    email: "compras@denso.com.br",
+    address: "Rua Climatização, 2000 - São Paulo/SP",
+    products: products.filter(p => p.supplierId === 20).length
+  },
+  {
+    id: 21,
+    name: "ZF",
+    cnpj: "23.456.789/0001-90",
+    contact: "Bruno Ferreira",
+    phone: "(11) 3456-7810",
+    email: "vendas@zf.com.br",
+    address: "Av. Direção, 2100 - São Paulo/SP",
+    products: products.filter(p => p.supplierId === 21).length
+  },
+  {
+    id: 22,
+    name: "GKN",
+    cnpj: "34.567.890/0001-01",
+    contact: "Aline Mendes",
+    phone: "(11) 3456-7811",
+    email: "contato@gkn.com.br",
+    address: "Rua Transmissão, 2200 - São Paulo/SP",
+    products: products.filter(p => p.supplierId === 22).length
+  },
+  {
+    id: 23,
+    name: "Eaton",
+    cnpj: "45.678.901/0001-12",
+    contact: "Thiago Costa",
+    phone: "(11) 3456-7812",
+    email: "compras@eaton.com.br",
+    address: "Av. Diferencial, 2300 - São Paulo/SP",
+    products: products.filter(p => p.supplierId === 23).length
   }
 ];
 
@@ -471,6 +880,7 @@ export const metrics = {
   vendasHoje: 1009.30,
   totalProdutos: products.length,
   produtosBaixoEstoque: products.filter(p => p.stock <= p.minStock).length,
+  produtosEsgotados: products.filter(p => p.stock === 0).length,
   totalClientes: customers.length,
   totalFornecedores: suppliers.length,
   vendasPendentes: sales.filter(s => s.status === "Pendente").length,

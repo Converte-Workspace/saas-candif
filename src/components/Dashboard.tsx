@@ -2,6 +2,7 @@ import { metrics, products } from '../data/mockData';
 
 const Dashboard = () => {
   const produtosBaixoEstoque = products.filter(p => p.stock <= p.minStock);
+  const produtosEsgotados = products.filter(p => p.stock === 0);
 
   return (
     <div className="p-8">
@@ -72,6 +73,40 @@ const Dashboard = () => {
         </div>
       </div>
 
+      {/* Alertas de Produtos Esgotados */}
+      {produtosEsgotados.length > 0 && (
+        <div className="card bg-red-50 border-red-200 mb-6">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold">!</span>
+            </span>
+            <h3 className="text-xl font-bold text-red-900">Produtos Esgotados - Ação Imediata Necessária</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {produtosEsgotados.map((produto) => (
+              <div key={produto.id} className="bg-white rounded-lg p-4 border border-red-200">
+                <div className="flex items-center gap-3">
+                  <img
+                    src={produto.image}
+                    alt={produto.name}
+                    className="w-16 h-16 object-cover rounded"
+                  />
+                  <div className="flex-1 min-w-0">
+                    <p className="font-semibold text-gray-900 truncate">{produto.name}</p>
+                    <p className="text-sm text-gray-600">{produto.category}</p>
+                    <p className="text-xs text-red-600 font-medium mt-1">Fornecedor: {produto.supplier}</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-2xl font-bold text-red-600">{produto.stock}</p>
+                    <p className="text-xs text-gray-500">unidades</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Alertas de Estoque Baixo */}
       {produtosBaixoEstoque.length > 0 && (
         <div className="card bg-orange-50 border-orange-200 mb-8">
@@ -82,7 +117,7 @@ const Dashboard = () => {
             <h3 className="text-xl font-bold text-orange-900">Produtos com Estoque Baixo</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {produtosBaixoEstoque.map((produto) => (
+            {produtosBaixoEstoque.filter(p => p.stock > 0).map((produto) => (
               <div key={produto.id} className="bg-white rounded-lg p-4 border border-orange-200">
                 <div className="flex items-center gap-3">
                   <img
@@ -93,6 +128,7 @@ const Dashboard = () => {
                   <div className="flex-1 min-w-0">
                     <p className="font-semibold text-gray-900 truncate">{produto.name}</p>
                     <p className="text-sm text-gray-600">{produto.category}</p>
+                    <p className="text-xs text-orange-600 font-medium mt-1">Fornecedor: {produto.supplier}</p>
                   </div>
                   <div className="text-right">
                     <p className="text-2xl font-bold text-orange-600">{produto.stock}</p>
